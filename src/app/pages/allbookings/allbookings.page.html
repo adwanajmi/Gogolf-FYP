@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>All Bookings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card text-center *ngFor="let booking of bookings | async">
+    <ion-card-header>
+      <ion-card-title>
+        {{booking.course}}
+      </ion-card-title>
+
+     
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>User ID:{{booking.creator}}</ion-item> 
+     <ion-item lines='none'>Start: {{booking.startTime?.seconds*1000 | date: 'dd/MM/yyyy H:mm' }}</ion-item> 
+    <ion-item lines='none'> End: {{booking.endTime?.seconds*1000 | date: 'dd/MM/yyyy H:mm' }}</ion-item>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Cash</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card text-center>
+    <ion-card-header>
+      <ion-card-title>Payment info</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input placeholder="User Id" [(ngModel)]="user2"></ion-input>
+    </ion-card-content>
+    <!-- <ion-card-content>
+            <ion-input placeholder="Price" [(ngModel)]="itemprice"></ion-input>
+          </ion-card-content> -->
+    <ion-card-content>
+      <ion-input placeholder="Value" [(ngModel)]="value"></ion-input>
+    </ion-card-content>
+
+
+    <ion-button (click)="pay(user2)">Submit</ion-button>
+  </ion-card>
+</ion-content>

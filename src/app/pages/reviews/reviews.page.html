@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Reviews</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login" routerDirection="root">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ng-container *ngIf="existingcust">
+    <ion-card class="cardfillsize">
+      <form (ngSubmit)="submitreview()" [formGroup]="reviewform">
+        <ion-card-header>
+          <ion-card-title>
+            Write Review
+            <rating name="stars" formControlName="stars" readonly="false" size="default">
+            </rating>
+          </ion-card-title>
+
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-input placeholder="Enter Your Review" type="text" name="review" formControlName="review"></ion-input>
+          <ion-button class="ion-padding-horizontal" color="primary" expand="full" type="submit"
+            [disabled]="!reviewform.valid">Submit</ion-button>
+
+
+        </ion-card-content>
+      </form>
+    </ion-card>
+  </ng-container>
+  <ion-card class="cardsize" *ngFor="let item of reviews | async">
+    
+    <ion-card-header>
+      <ion-card-title >
+          <ion-item>
+              {{ item.title }} 
+              <rating slot ="end" [(ngModel)]="item.stars" readonly="true" size="default" (ngModelChange)="onRateChange($event)">
+                </rating>
+            </ion-item>
+        
+        
+      </ion-card-title>
+
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+          {{ item.review }}
+          <ion-note slot="end"> {{ item.date?.seconds*1000 | date: 'MMM d' }}</ion-note>
+        
+      </ion-item>
+      
+
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="signOut()">
+        <ion-icon name="log-out" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>GoGolf(Admin)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button routerLink="/addcash" class="col-50">
+    Add Cash
+    <ion-icon name="cash"></ion-icon>
+
+  </ion-button>
+
+  <ion-button routerLink="/allbookings" class="col-50">
+    All Bookings
+    <ion-icon name="bookmarks"></ion-icon>
+  </ion-button>
+  <ion-button routerLink="/reviews" class="col-50">
+    Reviews
+    <ion-icon name="star"></ion-icon>
+  </ion-button>
+  <ion-button routerLink="/setprice" class="col-50">
+    Settings
+    <ion-icon name="cash"></ion-icon>
+  </ion-button>
+  <ion-button routerLink="/news" class="col-50">
+    Manage News
+    <ion-icon name="paper"></ion-icon>
+  </ion-button>
+</ion-content>

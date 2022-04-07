@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Book</ion-title>
+    <ion-buttons slot="end">
+      RM {{balancevar}}
+      <ion-button routerLink="/login" routerDirection="root">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-card text-center>
+    <ion-card-header>
+      <ion-card-title>Payment info</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input placeholder="User Id" [(ngModel)]="user2"></ion-input>
+    </ion-card-content>
+  
+    <ion-card-content>
+      <ion-input placeholder="Value" [(ngModel)]="value"></ion-input>
+    </ion-card-content>
+
+    <ion-button (click)="scanCode()">
+      Scan
+    </ion-button>
+    <ion-button (click)="pay()">Submit</ion-button>
+
+  </ion-card> -->
+  <div class="ion-padding">
+
+    <ion-card text-center>
+      <ion-card-header>
+        <ion-item >
+          <img src="assets/imgs/peak-hour.jpg" width="100%" alt="your image">
+        </ion-item>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Book for:</ion-label>
+          <ion-select (ionChange)="selection()" [(ngModel)]="courseselect">
+            <ion-select-option *ngFor="let course of courses">{{course}}</ion-select-option>
+    
+    
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Start Time</ion-label>
+          <ion-select (ionChange)="test()" [(ngModel)]="timeselect">
+    
+            <ion-select-option *ngFor="let book of bookedcheckinverse">
+              <!-- <ng-container *ngIf="!book">
+              {{book}}
+            </ng-container>
+            <ng-container *ngIf="book"> -->
+              {{book}}
+              <!-- </ng-container> -->
+            </ion-select-option>
+            <!-- <ion-select-option value=10 >10am-12pm</ion-select-option>
+            <ion-select-option value=12 >12pm-2pm</ion-select-option>
+            <ion-select-option value=14 >2pm-4pm</ion-select-option>
+            <ion-select-option value=16 >4pm-6pm</ion-select-option>
+            <ion-select-option value=18 >6pm-8pm</ion-select-option>
+            <ion-select-option value=20 >8pm-10pm</ion-select-option>
+            <ion-select-option value=22 >10pm-12am</ion-select-option> -->
+    
+    
+          </ion-select>
+        </ion-item>
+        <ion-button (click)="pay()">Book</ion-button>
+        Total: RM {{value}}
+      </ion-card-content>
+  
+     
+  
+    </ion-card>
+    
+
+
+    <calendar [eventSource]="eventSource" [calendarMode]="calendar.mode" [currentDate]="calendar.currentDate"
+      (onCurrentDateChanged)="onCurrentDateChanged($event)" (onRangeChanged)="reloadSource(startTime, endTime)"
+      (onEventSelected)="onEventSelected($event)" (onTitleChanged)="onViewTitleChanged($event)"
+      (onTimeSelected)="onTimeSelected($event)" step="30">
+
+    </calendar>
+
+  </div>
+
+</ion-content>

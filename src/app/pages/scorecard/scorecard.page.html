@@ -1,0 +1,758 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Scorecard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="submit18()" [formGroup]="form18">
+
+  <ion-grid>
+
+      <ion-row>
+        <ion-col class="toptable" size="1">
+          HOLE NO
+        </ion-col>
+        <ion-col class="color1" size="1">
+          MEN
+        </ion-col>
+        <ion-col class="color2" size="1">
+          LADIES
+        </ion-col>
+        <ion-col class="toptable" size="1">
+          INDEX
+        </ion-col>
+        <ion-col class="toptable" size="1">
+          PAR
+        </ion-col>
+        <ion-col class="toptable" size="4">
+          SCORE
+        </ion-col>
+       
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="toptable" size="1">
+
+        </ion-col>
+        <ion-col size="1" class="color1">
+          METER
+        </ion-col>
+        <ion-col size="1" class="color2">
+          METER
+        </ion-col>
+        <ion-col class="toptable" size="1">
+        </ion-col>
+        <ion-col class="toptable" size="1">
+        </ion-col>
+        <ion-col class="toptable" size="1">
+          <ion-input name="A" formControlName="A"></ion-input>
+        </ion-col>
+        <ion-col class="toptable" size="1">
+          <ion-input name="B" formControlName="B"></ion-input>
+        </ion-col>
+        <ion-col class="toptable" size="1">
+          <ion-input name="C" formControlName="C"></ion-input>
+        </ion-col>
+        <ion-col class="toptable" size="1">
+          <ion-input name="D" formControlName="D"></ion-input>
+        </ion-col>
+       
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          1
+        </ion-col>
+        <ion-col class="color1" size="1">
+          377
+        </ion-col>
+        <ion-col class="color2"size="1">
+          331
+        </ion-col>
+        <ion-col size="1">
+          4
+        </ion-col>
+        <ion-col size="1">
+          4
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A1" formControlName="A1"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B1" formControlName="B1"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C1" formControlName="C1"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D1" formControlName="D1"></ion-input>
+        </ion-col>
+       
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col size="1">
+          2
+        </ion-col>
+        <ion-col class="color1" size="1">
+          128
+        </ion-col>
+        <ion-col class="color2" size="1">
+          78
+        </ion-col>
+        <ion-col size="1">
+          17
+        </ion-col>
+        <ion-col size="1">
+          3
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A2" formControlName="A2"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B2" formControlName="B2"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C2" formControlName="C2"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D2" formControlName="D2"></ion-input>
+        </ion-col>
+      
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          3
+        </ion-col>
+        <ion-col class="color1" size="1">
+          302
+        </ion-col>
+        <ion-col class="color2" size="1">
+          279
+        </ion-col>
+        <ion-col size="1">
+          6
+        </ion-col>
+        <ion-col size="1">
+          4
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A3" formControlName="A3"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B3" formControlName="B3"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C3" formControlName="C3"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D3" formControlName="D3"></ion-input>
+        </ion-col>
+       
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          4
+        </ion-col>
+        <ion-col class="color1" size="1">
+          110
+        </ion-col>
+        <ion-col class="color2" size="1">
+          80
+        </ion-col>
+        <ion-col size="1">
+          15
+        </ion-col>
+        <ion-col size="1">
+          3
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A4" formControlName="A4"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B4" formControlName="B4"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C4" formControlName="C4"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D4" formControlName="D4"></ion-input>
+        </ion-col>
+       
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          5
+        </ion-col>
+        <ion-col class="color1" size="1">
+          454
+        </ion-col>
+        <ion-col class="color2" size="1">
+          441
+        </ion-col>
+        <ion-col size="1">
+          8
+        </ion-col>
+        <ion-col size="1">
+          5
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A5" formControlName="A5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B5" formControlName="B5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C5" formControlName="C5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D5" formControlName="D5"></ion-input>
+        </ion-col>
+       
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          6
+        </ion-col>
+        <ion-col class="color1" size="1">
+          494
+        </ion-col>
+        <ion-col class="color2" size="1">
+          444
+        </ion-col>
+        <ion-col size="1">
+          1
+        </ion-col>
+        <ion-col size="1">
+          5
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A6" formControlName="A6"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B6" formControlName="B6"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C6" formControlName="C6"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D6" formControlName="D6"></ion-input>
+        </ion-col>
+        
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          7
+        </ion-col>
+        <ion-col class="color1" size="1">
+          338
+        </ion-col>
+        <ion-col class="color2" size="1">
+          328
+        </ion-col>
+        <ion-col size="1">
+          10
+        </ion-col>
+        <ion-col size="1">
+          4
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A7" formControlName="A7"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B7" formControlName="B7"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C7" formControlName="C7"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D7" formControlName="D7"></ion-input>
+        </ion-col>
+        
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          8
+        </ion-col>
+        <ion-col class="color1" size="1">
+          178
+        </ion-col>
+        <ion-col class="color2" size="1">
+          131
+        </ion-col>
+        <ion-col size="1">
+          13
+        </ion-col>
+        <ion-col size="1">
+          3
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A8" formControlName="A8"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B8" formControlName="B8"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C8" formControlName="C8"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D8" formControlName="D8"></ion-input>
+        </ion-col>
+        
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          9
+        </ion-col>
+        <ion-col  class="color1" size="1">
+          431
+        </ion-col>
+        <ion-col class="color2" size="1">
+          395
+        </ion-col>
+        <ion-col size="1">
+          12
+        </ion-col>
+        <ion-col size="1">
+          5
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="A9" formControlName="A9"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="B9" formControlName="B9"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="C9" formControlName="C9"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <ion-input type="number" name="D9" formControlName="D9"></ion-input>
+        </ion-col>
+       
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="1">
+          OUT
+        </ion-col>
+        <ion-col class="color1" size="1">
+          2812
+        </ion-col>
+        <ion-col class="color2" size="1">
+          2507
+        </ion-col>
+        <ion-col size="1">
+          OUT
+        </ion-col>
+        <ion-col size="1">
+          36
+        </ion-col>
+        <ion-col size="1">
+        </ion-col>
+        <ion-col size="1">
+        </ion-col>
+        <ion-col size="1">
+        </ion-col>
+        <ion-col size="1">
+        </ion-col>
+       
+      </ion-row>
+      
+  </ion-grid>
+
+  <ion-grid>
+
+
+    <ion-row>
+      <ion-col class="toptable" size="1">
+        HOLE NO
+      </ion-col>
+      <ion-col class="color3" size="1">
+        MEN
+      </ion-col>
+      <ion-col class="color4" size="1">
+        LADIES
+      </ion-col>
+      <ion-col class="toptable" size="1">
+        INDEX
+      </ion-col>
+      <ion-col class="toptable" size="1">
+        PAR
+      </ion-col>
+      <ion-col class="toptable" size="4">
+        SCORE
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="toptable" size="1">
+
+      </ion-col>
+      <ion-col size="1" class="color3">
+        METER
+      </ion-col>
+      <ion-col size="1" class="color4">
+        METER
+      </ion-col>
+      <ion-col class="toptable" size="1">
+      </ion-col>
+      <ion-col class="toptable" size="1">
+      </ion-col>
+      <ion-col class="toptable" size="1">
+      </ion-col>
+      <ion-col class="toptable" size="1">
+      </ion-col>
+      <ion-col class="toptable" size="1">
+      </ion-col>
+      <ion-col class="toptable" size="1">
+      </ion-col>
+     
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        10
+      </ion-col>
+      <ion-col class="color3" size="1">
+        395
+      </ion-col>
+      <ion-col class="color4" size="1">
+        309
+      </ion-col>
+      <ion-col size="1">
+        3
+      </ion-col>
+      <ion-col size="1">
+        4
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A10" formControlName="A10"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B10" formControlName="B10"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C10" formControlName="C10"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D10" formControlName="D10"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col size="1">
+        11
+      </ion-col>
+      <ion-col class="color3" size="1">
+        112
+      </ion-col>
+      <ion-col class="color4" size="1">
+        69
+      </ion-col>
+      <ion-col size="1">
+        18
+      </ion-col>
+      <ion-col size="1">
+        3
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A11" formControlName="A11"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B11" formControlName="B11"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C11" formControlName="C11"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D11" formControlName="D11"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        12
+      </ion-col>
+      <ion-col class="color3" size="1">
+        315
+      </ion-col>
+      <ion-col class="color4" size="1">
+        273
+      </ion-col>
+      <ion-col size="1">
+        5
+      </ion-col>
+      <ion-col size="1">
+        4
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A12" formControlName="A12"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B12" formControlName="B12"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C12" formControlName="C12"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D12" formControlName="D12"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        13
+      </ion-col>
+      <ion-col class="color3" size="1">
+        86
+      </ion-col>
+      <ion-col class="color4" size="1">
+        64
+      </ion-col>
+      <ion-col size="1">
+        16
+      </ion-col>
+      <ion-col size="1">
+        3
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A13" formControlName="A13"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B13" formControlName="B13"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C13" formControlName="C13"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D13" formControlName="D13"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        14
+      </ion-col>
+      <ion-col class="color3" size="1">
+        472
+      </ion-col>
+      <ion-col class="color4" size="1">
+        430
+      </ion-col>
+      <ion-col size="1">
+        7
+      </ion-col>
+      <ion-col size="1">
+        5
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A14" formControlName="A14"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B14" formControlName="B14"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C14" formControlName="C14"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D14" formControlName="D14"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        15
+      </ion-col>
+      <ion-col class="color3" size="1">
+        474
+      </ion-col>
+      <ion-col class="color4" size="1">
+        439
+      </ion-col>
+      <ion-col size="1">
+        2
+      </ion-col>
+      <ion-col size="1">
+        5
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A15" formControlName="A15"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B15" formControlName="B15"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C15" formControlName="C15"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D15" formControlName="D15"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        16
+      </ion-col>
+      <ion-col class="color3" size="1">
+        353
+      </ion-col>
+      <ion-col class="color4" size="1">
+        311
+      </ion-col>
+      <ion-col size="1">
+        9
+      </ion-col>
+      <ion-col size="1">
+        4
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A16" formControlName="A16"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B16" formControlName="B16"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C16" formControlName="C16"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D16" formControlName="D16"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        17
+      </ion-col>
+      <ion-col class="color3" size="1">
+        159
+      </ion-col>
+      <ion-col class="color4" size="1">
+        104
+      </ion-col>
+      <ion-col size="1">
+        14
+      </ion-col>
+      <ion-col size="1">
+        3
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A17" formControlName="A17"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B17" formControlName="B17"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C17" formControlName="C17"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D17" formControlName="D17"></ion-input>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        18
+      </ion-col>
+      <ion-col class="color3" size="1">
+        439
+      </ion-col>
+      <ion-col class="color4" size="1">
+        380
+      </ion-col>
+      <ion-col size="1">
+        11
+      </ion-col>
+      <ion-col size="1">
+        5
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="A18" formControlName="A18"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="B18" formControlName="B18"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="C18" formControlName="C18"></ion-input>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input type="number" name="D18" formControlName="D18"></ion-input>
+      </ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col size="1">
+        IN
+      </ion-col>
+      <ion-col class="color3" size="1">
+        2805
+      </ion-col>
+      <ion-col class="color4" size="1">
+        2379
+      </ion-col>
+      <ion-col size="1">
+        IN
+      </ion-col>
+      <ion-col size="1">
+        36
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      
+    </ion-row>
+    <ion-row>
+      <ion-col size="1">
+        OUT
+      </ion-col>
+      <ion-col class="color3" size="1">
+        2812
+      </ion-col>
+      <ion-col class="color4" size="1">
+        2507
+      </ion-col>
+      <ion-col size="1">
+        OUT
+      </ion-col>
+      <ion-col size="1">
+        36
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+      
+    </ion-row>
+    <ion-button routerLink="/app/profile" class="ion-padding-horizontal" color="primary" expand="full" type="submit"
+      [disabled]="!form18.valid">Submit</ion-button>
+  </ion-grid>
+</form>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "academyDesign",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

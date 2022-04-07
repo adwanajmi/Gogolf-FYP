@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title>
+    About us 
+  
+  </ion-title>
+  <ion-card text-center *ngFor="let ho of aboutus | async">
+    <ion-card-header>
+      <ion-card-title>
+
+      </ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines = "none">
+      <b>{{ ho.description }}</b>
+    </ion-item>
+    <ion-item lines = "none">
+      <ion-button (click)="presentAlertPrompt2(ho.id)">Edit</ion-button>
+    </ion-item>
+
+    </ion-card-content>
+
+  </ion-card>
+  <ion-title>
+    Time Settings
+  
+  </ion-title>
+  <ion-card text-center *ngFor="let h of hours | async">
+    <ion-card-header>
+      <ion-card-title>
+       Time(hour) :{{ h.name }}.00
+
+      </ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines = "none">
+      <b>{{ h.price }}</b>
+    </ion-item>
+    <ion-item lines = "none">
+      <ion-button (click)="presentAlertPrompt(h.id)">Edit</ion-button>
+    </ion-item>
+
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
